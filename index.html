@@ -540,8 +540,6 @@ function setStore(key, val) { localStorage.setItem(key, JSON.stringify(val)); }
 // Pastikan file foto berada di dalam folder yang sama di GitHub.
 const defaultPhotos = [
   { src: "idv1.jpg", caption: "idv" },
-  { src: "foto2.jpg", caption: "Senyum terindahmu ✨" },
-  { src: "foto3.jpg", caption: "Kenangan tak terlupakan 🌹" }
 ];
 
 function renderGallery() {
@@ -564,8 +562,7 @@ function renderGallery() {
 // ==========================================
 // Masukkan nama file lagu mp3 di bagian "src".
 const defaultSongs = [
-  { title: "Judul Lagu 1", artist: "Nama Artis 1", emoji: "🎵", src: "lagu1.mp3" },
-  { title: "Judul Lagu 2", artist: "Nama Artis 2", emoji: "🎧", src: "lagu2.mp3" }
+   {title: "Judul Lagu 1", artist: "Nama Artis 1", emoji: "🎵", src: "The 1975 - About You (Official) [tGv7CUutzqU].mp3" },
 ];
 
 let curSong = 0;
@@ -631,8 +628,7 @@ function seekMusic(e) {
 
 // ===== LETTERS =====
 const defaultLetters = [
-  { title: "Untuk Kamu yang Selalu Ada", from: "Ariel", body: "Sayang,\n\nAku tidak tahu bagaimana mengungkapkan betapa beruntungnya aku memilikimu. Setiap pagi ketika aku bangun, hal pertama yang aku pikirkan adalah kamu. Kamu adalah alasan senyumku, alasan semangatku.\n\nAku cinta kamu lebih dari kata-kata bisa ungkapkan. 💕", date: "Dari hatiku" },
-  { title: "Satu Tahun Lebih Bersama", from: "Cintya", body: "Cintaku,\n\nSiapa sangka kita sudah sejauh ini bersama? Perjalanan ini tidak selalu mulus, tapi aku tidak mau menukarnya dengan apapun.\n\nAku berjanji untuk selalu ada, hari demi hari. Kamu dan aku, selamanya. ❤️", date: "Dengan cinta" },
+  { title: "i love you with all my heart", from: "Ariel", body: "aku sangat sayang kamu babe, maaf kalau aku terlalu sering nyakitin kamu. Aku mau kita terus bersama sampai dimana kita bisa hidup berdampingan, date: "Dari hatiku" },
 ];
 let letters = [];
 function renderLetters() {
@@ -699,8 +695,7 @@ function deleteLetter(i) {
 
 // ===== TIMELINE =====
 const defaultTimeline = [
-  { date: "10 Oktober 2025", title: "Hari Pertama Kita 💑", desc: "Hari yang tidak pernah bisa aku lupakan. Kamu mengucapkan kata-kata yang mengubah hidupku selamanya.", emoji: "❤️" },
-  { date: "Momen Pertama", title: "Kencan Pertama 🍜", desc: "Makan bareng sambil cerita-cerita. Dari situlah aku tahu, aku ingin menghabiskan waktu bersamamu terus.", emoji: "🍜" },
+  { date: "10 Oktober 2025", title: "Hari Pertama Kita", desc: "hari dimana dimulainya perjalanan kita berdua."},
 ];
 let tlItems = [];
 function renderTimeline() {
@@ -763,8 +758,8 @@ function deleteTimeline(i) {
 
 // ===== WISHES =====
 const defaultWishes = [
-  { from: "Ariel", text: "Aku berharap kita bisa traveling keliling Asia bersama suatu hari nanti. 🌏", date: "Harapanku" },
-  { from: "Cintya", text: "Semoga kita bisa membangun rumah kecil yang hangat, penuh tawa, dan penuh cinta. 🏡", date: "Impianku" },
+  { from: "Ariel", text: "Aku berharap kita berdua bisa terus bersama selamanya", date: "Harapanku" },
+ 
 ];
 let wishes = [];
 function renderWishes() {
